@@ -1,0 +1,14 @@
+{
+  "name": "url-shortener",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">= 0.6.19",
+    "npm": ">= 1.1.x"
+  },
+  "dependencies": {
+    "connect": "2.4.3",
+    "express": "3.3.4",
+    "ejs": "0.8.4",
+    "mongoose": "3.8.19"
+  }
+}
