@@ -46,8 +46,7 @@ addShortCodeForm.addEventListener('submit', function(event) {
   request.send(JSON.stringify({ url: url }));
 });
 
-/* Renders a comment with the given name and message to be listed in the
- * #comments div. */
+/* Renders all the given short codes into a <ul>, returning a HTMLElement. */
 function renderShortCodes(shortCodes) {
   var header = tag('li', [
     tag('strong', { 'class': 'url' }, 'URL'),
