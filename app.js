@@ -1,10 +1,15 @@
-"use strict";
 var express = require('express');
+var bodyParser = require('body-parser');
+
 var app = express();
+// serve all files out of public folder
+app.use(express.static('public'));
 
-require('./settings')(app, express);
-require('./routes')(app);
+// parse json bodies in post requests
+app.use(bodyParser.json());
 
-var port = process.env.PORT || 3155;
+// TODO: url shortener code
+
+var port = 3000;
 console.log('Listening at 127.0.0.1:' + port);
 app.listen(port);
