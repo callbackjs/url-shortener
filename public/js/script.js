@@ -57,7 +57,7 @@ function renderShortCodes(shortCodes) {
   var lis = shortCodes.map(function(code) {
     return tag('li', [
       tag('span', { 'class': 'url' }, code.url),
-      tag('a', { href: '/code/?code=' + code.code, 'class': 'code' }, code.code)
+      tag('a', { href: '/expand/?code=' + code.code, 'class': 'code' }, code.code)
     ]);
   });
 
